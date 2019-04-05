@@ -43,7 +43,7 @@ duplicates = [name for name in names_2 if name in names1_set]
 # names1_dict = {'lol': name for name in names_1}
 
 # duplicates = [name for name in names_2 if name in names1_dict.values()]
-
+# stretch is basically over, got it done. use sets to hash without values (only keys), and check against that. Perfect space and time complexity
 end_time = time.time()
 print(f"{len(duplicates)} duplicates:\n\n{', '.join(duplicates)}\n\n")
 print(f"runtime: {end_time - start_time} seconds")

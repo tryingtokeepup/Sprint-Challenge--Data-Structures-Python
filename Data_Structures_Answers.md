@@ -18,5 +18,6 @@ Add your answers to the questions below.
 6. What is the space complexity of the provided code in `names.py`?
    O(n), as in the worst case scenario, we might have two lists that are complete duplicates, which we have to pass as a list of `n` elements.
 7. What is the runtime complexity of your optimized code in `names.py`?
-
+   0(n), as we traverse the set.
 8. What is the space complexity of your optimized code in `names.py`?
+   O(n) space complexity, because we are dealing with the worst case scenario that we have to return a completely duplicate list.

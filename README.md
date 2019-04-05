@@ -64,7 +64,7 @@ Six seconds is an eternity so you've been tasked with speeding up the code. Can 
 
 #### Task 3. Analyze Some Runtimes
 
-Open up the `Data_Structures_Answers.md` file. This is where you'll jot down your answers for the runtimes of the functions you just implemented. If you implemented depth-first traversal, just answer the questions pertaining to the depth-first traversal algorithm. If you implemented breadth-first traversal, just answer the questions pertaining to breadth-first traversal. 
+Open up the `Data_Structures_Answers.md` file. This is where you'll jot down your answers for the runtimes of the functions you just implemented. If you implemented depth-first traversal, just answer the questions pertaining to the depth-first traversal algorithm. If you implemented breadth-first traversal, just answer the questions pertaining to breadth-first traversal.
 
 Also, include the runtime and space complexities of the original code and your optimized solution from `names.py`.
 
@@ -73,7 +73,6 @@ Also, include the runtime and space complexities of the original code and your o
 1. Implement the other tree traversal algorithm that you didn't implement on the `BinarySearchTree` class. Run the appropriate test file to test your implementation's correctness. Then go back to the `Data_Structures_Answers.md` file and answer the time and space complexity questions pertaining to the traveral method you just implemented.
 
 2. Say your code from `names.py` is to run on an embedded computer with very limited RAM. Because of this, memory is extremely constrained and you are only allowed to store names in arrays (i.e. Python lists). How would you go about optimizing the code under these conditions? Try it out and compare your solution to the original runtime. (If this solution is less efficient than your original solution, include both and label the strech solution with a comment)
-
 
 ### Rubric
 
@@ -95,9 +94,8 @@ Also, include the runtime and space complexities of the original code and your o
 - Both DFS and BFS pass tests: 2 points
 - `names.py` is optimized with sub-quadratic runtime complexity and tightly constrained linear space complexity: 2 points
 
-
 #### Grading
 
-* *3*: 28+
-* *2*: 20-27
-* *1*: 0-19
+- _3_: 28+
+- _2_: 20-27
+- _1_: 0-19
