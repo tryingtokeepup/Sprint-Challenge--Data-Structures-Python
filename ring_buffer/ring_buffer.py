@@ -15,30 +15,37 @@ class RingBuffer:
             self.storage.insert(0, item)
             self.current += 1
         else:
-            self.storage.pop(self.capacity - 1)
-            self.storage.insert(0, item)
+            self.storage.pop(self.current - self.capacity)
+            self.storage.insert(self.current - self.capacity, item)
+            self.current += 1
 
     def get(self):
         storage = self.storage
         storage = [x for x in storage if x is not None]
         return storage
 
+# THIS FAILS AFTER IT REACHES 2 loops in!
+# buf = RingBuffer(4)
 
-buf = RingBuffer(4)
 
-
-buf.append(1)
-print(buf.get())
-buf.append(1)
-print(buf.get())
-buf.append(3)
-print(buf.get())
-buf.append(6)
-print(buf.get())
-buf.append(10)
-print(buf.get())
+# buf.append(1)
+# print(buf.get())
+# buf.append(1)
+# print(buf.get())
+# buf.append(3)
+# print(buf.get())
+# buf.append(7)
+# print(buf.get())
+# buf.append(10)
+# print(buf.get())
 # buf.append(9)
 # print(buf.get())
 # buf.append(3)
+# print(buf.get())
 # buf.append(6)
 # print(buf.get())
+# buf.append(2)
+# print(buf.get())
+# buf.append(5)
+# print(buf.get())
+# buf.append(6)

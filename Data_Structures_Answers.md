@@ -14,9 +14,9 @@ Add your answers to the questions below.
    Constant space, all we are doing is calling the list with that capacity amount.
 
 5. What is the runtime complexity of the provided code in `names.py`?
-
+   O(n^2), as we are doing two nested loops.
 6. What is the space complexity of the provided code in `names.py`?
-
+   O(n), as in the worst case scenario, we might have two lists that are complete duplicates, which we have to pass as a list of `n` elements.
 7. What is the runtime complexity of your optimized code in `names.py`?
 
 8. What is the space complexity of your optimized code in `names.py`?
